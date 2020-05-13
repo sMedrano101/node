@@ -1,0 +1,28 @@
+<html>
+
+<head></head>
+
+<body>
+    <h1>Movies Website</h1>
+    
+
+{{! INFORMATION BEING RE  }}
+<ul>
+  {{#listOfMovies}}
+    <form method="POST" action="/delete-movie"> 
+    
+      <li>
+        {{title}} {{description}} {{genre}}
+        <input type="hidden" name="deleteMovie" value="{{title}}"/>
+        <button>delete</button>
+     </li> 
+    
+ 
+    </form>
+ {{/listOfMovies}}
+
+</ul> 
+
+</body>
+
+</html>
