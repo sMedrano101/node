@@ -16,7 +16,7 @@ app.use(require("./routes/movies"));
 app.use(require("./routes/content"));
 
 // localhost:3000/css/style.css
-app.use("/css", express.static("css")); //any file inside the css folder can be accessed at //localhost:3000/style.css.
+//app.use(express.static("css")); //any file inside the css folder can be accessed at //localhost:3000/style.css.
 
 //localhost:3000/client.js
 app.use(express.static("public"));

@@ -1,0 +1,32 @@
+<html>
+
+
+<head> </head>
+
+<body>
+    <h1>add</h1>
+    <form method="POST" action="/book">
+        <input type='text' placeHolder='title' name='title' />
+        <input type="text" placeHolder='Enter image URL' />
+        <button>Add</button>
+    </form>
+
+    {{#title}}
+    <p> Your movie {{title}} has been added </p>
+    {{/title}}
+    
+</body>
+
+<a href="/trips">viewall trip</a>
+
+
+
+
+
+
+
+
+
+
+
+</html>

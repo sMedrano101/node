@@ -5,6 +5,7 @@
 <body>
     <h1>Movies Website</h1>
     
+    <h2>Hello the movie added was {{title}}, is a {{genre}} that is {{description}}.</h2>
 
 {{! INFORMATION BEING RE  }}
 <ul>
@@ -16,7 +17,16 @@
         <input type="hidden" name="deleteMovie" value="{{title}}"/>
         <button>delete</button>
      </li> 
-    
+
+<ul>
+     <form method="post" action="/genreMovie">
+        <li>
+            {{genre}}
+        <input type="hidden" name="genreMovie"/>
+        <button>Genre</button>
+        </li>
+    </form>
+</ul>    
  
     </form>
  {{/listOfMovies}}

@@ -28,4 +28,17 @@ router.post("/delete-movie", (req, res) => {
   res.redirect("/content"); // redirect the same page
 });
 
+//new code created on the fly.
+router.post("/genreMovie", (req, res) => {
+  let filterGenre = req.body.genreMovie;
+  console.log(movieTwoDelete);
+  let newMovies = tasks.filter((movie) => {
+    return movie.genre != filterGenre;
+  });
+
+  tasks = newMovies;
+
+  res.redirect("/content"); // redirect the same page
+});
+
 module.exports = router;
